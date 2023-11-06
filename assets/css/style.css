@@ -1,0 +1,142 @@
+@font-face{
+    font-family:font;
+    src:url(../fonts/Poppins-Medium.ttf);
+}
+
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'font','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bg-blue{
+    background-color: #131E3A;
+}
+.bg-danger2{
+    background-color:#D5385F !important;
+}
+.bg-danger3{
+    background-color: #5C327A;
+}
+.bg-danger4{
+    background-color: #905cb6;
+}
+.bg-warning2{
+    background-color: #FA9005;
+}
+.bg-dark1{
+    background-color: #000;
+}
+.text-danger2{
+    color:#D5385F !important;
+}
+.text-success2{
+    color:#376118;
+
+}
+.text-dark2{
+    color:#161616;
+
+}
+.top-15{
+    top:15%;
+}
+.top-10{
+    top:10%;
+}
+.top-20{
+    top:20%;
+}
+.fw-normal1{
+    font-weight:100 !important;
+}
+.fs-11{
+    font-size: 50px;
+}
+/* Banner Section Start */
+.banner{
+    width:100%;
+    height:550px;
+    background: url('../img/bk.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit:cover;
+}
+.tab-content .tab-pane form .bg-select{
+    background:none;
+}
+/* Banner Section End */
+
+/* Fun  Section Start*/
+.fun{
+    width:100%;
+    height: auto;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('../img/fun-bg.jpeg');
+    background-size: 100% 100%;
+}
+/* Fun  Section End*/
+/* newsLetter Section Start */
+.newsLetter{
+    width:100%;
+    height:auto;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/news-banner.webp');
+    background-size: 100% 100%;
+}
+.newsLetter form label{
+    display: none;
+}
+.newsLetter form input[type=email]{
+    width:400px;
+    background: none;
+    border:1px solid #fff;
+    padding: 4px 6px;
+}
+.newsLetter form ::placeholder{
+    color:#fff;
+}
+/*.newsLetter form button{
+    border:none;
+    padding:5px 10px;
+    background: #fff;
+}*/
+/* newsLetter Section End */
+/* Destination Section Start */
+.destination{
+    width:100%;
+    height:auto;
+}
+/* Destination Section End*/
+/* Media Query Section start */
+
+@media only screen and (max-width:575px){
+    .top-15{
+        top:5%;
+    }
+    .btn-width{
+        width:85px !important;
+        font-size:11px !important;
+    }
+}
+@media only screen and (max-width:370px){
+    .btn-width{
+        width:85px !important;
+        font-size:11px !important;
+        margin:0px;
+    }
+}
+@media only screen and (min-width:992px) {
+    .tab-content .tab-pane form  input[type=submit]{
+            width:80px;
+            height:80px;
+            border-radius: 50% !important;
+            margin-left:100px !important;
+            
+    }
+
+}
+
+/* Media Query Section End*/
+
+
+

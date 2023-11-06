@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Momondo-Travelling Website</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    </head>
+    <body>
+
+        <!-- Header Section Start -->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-blue">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img
+                            src="assets/img/logo-img1.png" width="150px"
+                            class="img-fluid" alt="logo"></a>
+                    <button class="navbar-toggler border-white" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <!---- <span class="navbar-toggler-icon"></span>-->
+                        <i class="fa-solid fa-bars text-light"></i>
+                    </button>
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-danger2 active "
+                                    aria-current="page"
+                                    href="#">Flights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light " href="#">Hotels</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Car Hire</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Trip
+                                    Finder</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Inspirtions</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle text-light"
+                                        href="#" role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="./assets/img/flag.jpeg"
+                                            width="20px" height="15px">
+                                        English Proficiency
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another
+                                                action</a></li>
+
+                                        <li><a class="dropdown-item" href="#">Something
+                                                else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-success" href="#">LogIn</a>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- / Header Section End -->
+
+        <!-- Banner Section Start -->
+        <section class="banner position-relative ">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-sm-9 col-lg-7 text-white  position-absolute top-15">
+                        <span class="fs-1 fw-normal">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit.
+                        </span>
+                        <p class="fw-bold fs-4 ms-4">
+                            -every single time
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-11 col-sm-10 position-absolute bottom-0 mb-5 bg-danger3 px-3 rounded py-2 ">
+                        <nav>
+                            <div class="nav nav-tabs border-0" id="nav-tab"
+                                role="tablist">
+                                <button
+                                    class="nav-link active mb-2 bg-danger2 border-0 rounded-0 text-white btn-width"
+                                    id="nav-home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-home" type="button"
+                                    role="tab" aria-controls="nav-home"
+                                    aria-selected="true">
+                                    <i class="fa-solid fa-plane-departure"></i>Flights
+                                </button>
+                                <button class="nav-link  text-white mx-2 btn-width bg-danger4 rounded-0 mb-2" id="nav-profile-tab" 
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#nav-profile" type="button"
+                                    role="tab" aria-controls="nav-profile"
+                                    aria-selected="false">
+                                    <i class="fa-solid fa-hotel"></i>Hotels
+                                </button>
+                                <button class="nav-link  text-white btn-width bg-danger4 rounded-0 mb-2" id="nav-contact-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#nav-contact" type="button"
+                                    role="tab" aria-controls="nav-contact"
+                                    aria-selected="false">
+                                    <i class="fa-solid fa-car"></i>Cars
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home"
+                                role="tabpanel" aria-labelledby="nav-home-tab"
+                                tabindex="0">
+                                <form action="#">
+                                    <div class="row g-1">
+                                                <div class="col-sm-6 col-lg-2 mt-2  mt-lg-4">
+                                                    <input type="text"
+                                                        class="form-control rounded-0"
+                                                        placeholder="Origin city"
+                                                        aria-label="First name">
+                                                </div>
+                                                <div class="col-lg-1 ">
+                                                    <span style="color:rgb(12, 236, 161) ;margin:0px 5px;"><i
+                                                    class="fa-solid fa-arrow-right-arrow-left fs-4 ms-3 mt-lg-4"></i></span>
+                                                </div>
+                                                <div class="col-sm-6 col-lg-2  mt-lg-4">
+                                                    <input type="text"
+                                                        class="form-control rounded-0"
+                                                        placeholder="Destination city"
+                                                        aria-label="Last name">
+                                                </div>
+                                                <div class="col-sm-6 col-lg-2  mt-lg-4">
+                                                    <input type="date"
+                                                        class="form-control rounded-0"
+                                                        placeholder
+                                                        aria-label="Last name">
+                                                </div>
+                                                <div class="col-sm-6 col-lg-2  mt-lg-4">
+                                                    <input type="date"
+                                                        class="form-control rounded-0"
+                                                        placeholder="Last name"
+                                                        aria-label="Last name">
+                                                </div>
+                                                <div class="col-sm-6 col-lg-1 mt-lg-4">
+                                                    <select
+                                                        class="form-select rounded-0">
+                                                        <option value="1 passenger"
+                                                            selected>1 passenger
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-2 col-12">
+                                                    <input type="submit"
+                                                    class="form-control rounded-0  mt-1 bg-danger2 border-0 text-light fs-6 py-3"
+                                                    value="Search">
+                                                </div>
+                                    </div>
+                                    <div class="row">
+                                                    <div class="col-md-6 col-lg-3">
+                                                        <label for="trip-type" class="form-label text-light mt-1">Trip Type :</label>
+                                                        <select class="border-0 text-light bg-select">
+                                                            <option class="text-dark" selected>Return Trip<option>
+                                                            <option class="text-dark">One Day Trip</option>
+                                                            <option class="text-dark">School Trip</option>
+                                                        </select>
+                                                    </div> 
+                                                    <div class="col-md-6 col-lg-3">
+                                                        <label for="ticket-class" class="form-label text-light mt-1">Ticket class :</label>
+                                                        <select class="border-0 bg-select text-white">
+                                                            <option selected class="text-dark">Economy</option>
+                                                            <option value="First" class="text-dark">First</option>
+                                                            <option value="Bussiness" class="text-dark">Bussiness</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-3">
+                                                        <input type="checkbox" class="form-check-input rounded-0">
+                                                        <label class="form-check-label mx-2 text-white">Direct Flights</label>
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-3">
+                                                        <input type="checkbox" class="form-check-input rounded-0">
+                                                        <label class="form-check-label mx-2 text-white">Include NearBy Airports</label>
+                                                    </div>
+                                    <div>
+
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile"
+                                role="tabpanel"
+                                aria-labelledby="nav-profile-tab" tabindex="0">
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact"
+                                role="tabpanel"
+                                aria-labelledby="nav-contact-tab" tabindex="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ Banner Section End -->
+
+        <!-- Fun Section Start -->
+        <section class="fun pb-5">
+            <div class="container">
+                <h2 class="text-center text-white py-4">SOME FUN WE COVERED</h2>
+                <div class="row">
+                  <div class="col-lg-2 col-md-4 my-2">
+                    <div class="bg-dark1 px-2 py-3 text-light text-center h-100">
+                        <i class="fa-solid fa-person-biking fs-11 mb-3"></i>
+                        <h6>5670M</h6>
+                        <p>Cycling Track</p>
+                    </div>
+
+                  </div>
+                  <div class="col-lg-2 col-md-4 my-2">
+                    <div class="bg-dark1 px- 2 py-3 text-light text-center h-100">
+                        <i class="fa-solid fa-route fs-11 mb-3"></i>
+                        <h6>480M</h6>
+                        <p>Distance Covered</p>
+ 
+                    </div>
+
+                  </div>
+                  <div class="col-lg-2 col-md-4 my-2">
+                    <div class="bg-dark1 px-2 py-3 text-light text-center h-100">
+                        <i class="fa-solid fa-person-hiking fs-11 mb-3"></i>
+                        <h6>5670M</h6>
+                        <p>Altitude Hiked</p>
+                    </div>
+
+                  </div>
+                  <div class="col-lg-2 col-md-4 my-2">
+                    <div class="bg-dark1 px-2 py-3 text-light text-center h-100">
+                        <i class="fa-solid fa-sailboat fs-11 mb-3"></i>
+                        <h6>180KM</h6>
+                        <p>Sailing Distance</p>
+  
+                    </div>
+
+                  </div>
+                  <div class="col-lg-2 col-md-4 my-2">
+                    <div class="bg-dark1 px-2 py-3 text-light text-center h-100">
+                        <i class="fa-solid fa-cloud-sun fs-11 mb-3"></i>
+                        <h6>570DAYS</h6>
+                        <p>Spent Adventure</p>
+
+                    </div>
+
+                  </div>
+                  <div class="col-lg-2 col-md-4 my-2">
+                    <div class="bg-dark1 px-2 py-3 text-light text-center h-100">
+                        <i class="fa-solid fa-dove fs-11 mb-3"></i>
+                        <h6>567M</h6>
+                        <p>Jungle Distance</p>
+
+                    </div>
+
+                  </div>  
+                </div>
+            </div>
+        </section>
+        <!--/ Fun Section End-->
+
+        <!-- NewLetter Section Start -->
+        <section class="newsLetter">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-12 col-lg-6">
+                    </div>
+                    <div class="col-12 col-lg-6  text-white text-center">
+                        <h1 class="my-4">SUBSCRIBE FOR OUR TRAVEL NEWSLETTER</h1>
+                        <p class="">join our community of over 300,000 global readers who receive
+                            emails filled with news,promotions and other good stuff
+                            from G Adventures</p>
+                        <form action>
+                            <label for="email">Email</label>
+                            <input type="email" name="txtemail" id="txtemail" class="me-2 me-lg-0"
+                                    placeholder="Enter Your Email Address.....">
+                            <button type="button" class="mt-3 mt-lg-0 border-0 bg-white px-3 py-1">SEARCH</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / NewLetter Section End -->
+
+        <!-- Destination Section Start -->
+        <section class="destination bg-danger3 py-4">
+            <h2 class="text-center text-white mb-4">POPULAR DESTINATION</h2>
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="bg-light p-1">
+                           <img src="./assets/img/desti.jpeg" class="w-100" height="200">
+                            <h3 class="fs-5 px-2 py-3"><span class="text-danger2">$999</span>
+                                Lorem, ipsum dolor.
+                                <span class="text-danger2">$999</span>
+                            </h3>
+                            <p class="px-2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quisquam cumque accusamus ex, 
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="bg-light p-1">
+                            <img src="./assets/img/desti1.jpeg" class="w-100" height="200">
+                            <h3 class="fs-5 px-2 py-3"><span class="text-danger2">$999</span>
+                                Lorem, ipsum dolor.
+                                <span class="text-danger2">$999</span>
+                            </h3>
+                            <p class="px-2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quisquam cumque accusamus ex, 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="bg-light p-1">
+                            <img src="./assets/img/desti2.jpeg" class="w-100" height="200">
+                            <h3 class="fs-5 px-2 py-3"><span class="text-danger2">$999</span>
+                                Lorem, ipsum dolor.
+                                <span class="text-danger2">$999</span>
+                            </h3>
+                            <p class="px-2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quisquam cumque accusamus ex, 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="bg-light p-1">
+                            <img src="./assets/img/desti3.jpeg" class="w-100" height="200">
+                            <h3 class="fs-5 px-2 py-3"><span class="text-danger2">$999</span>
+                                Lorem, ipsum dolor.
+                                <span class="text-danger2">$999</span>
+                            </h3>
+                            <p class="px-2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quisquam cumque accusamus ex, 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="bg-light p-1">
+                           <img src="./assets/img/desti4.jpeg" class="w-100" height="200">
+                            <h3 class="fs-5 px-2 py-3"><span class="text-danger2">$999</span>
+                                Lorem, ipsum dolor.
+                                <span class="text-danger2">$999</span>
+                            </h3>
+                             <p class="px-2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quisquam cumque accusamus ex, 
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="bg-light p-1">
+                            <img src="./assets/img/desti8.jpeg" class="w-100" height="200">
+                            <h3 class="fs-5 px-2 py-3"><span class="text-danger2">$999</span>
+                                Lorem, ipsum dolor.
+                                <span class="text-danger2">$999</span>
+                            </h3>
+                            <p class="px-2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quisquam cumque accusamus ex, 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="bg-light p-1">
+                            <img src="./assets/img/desti6.jpeg" class="w-100" height="200">
+                            <h3 class="fs-5 px-2 py-3"><span class="text-danger2">$999</span>
+                                Lorem, ipsum dolor.
+                                <span class="text-danger2">$999</span>
+                            </h3>
+                            <p class="px-2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quisquam cumque accusamus ex, 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="bg-light p-1">
+                            <img src="./assets/img/desti7.jpeg" class="w-100" height="200">
+                            <h3 class="fs-5 px-2 py-3"><span class="text-danger2">$999</span>
+                                Lorem, ipsum dolor.
+                                <span class="text-danger2">$999</span>
+                            </h3>
+                            <p class="px-2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quisquam cumque accusamus ex, 
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- / Destination Section End -->
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+            integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
