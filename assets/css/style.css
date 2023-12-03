@@ -39,6 +39,9 @@
     color:#161616;
 
 }
+.text-gray{
+    color:#7c6161;
+}
 .top-15{
     top:15%;
 }
@@ -82,6 +85,7 @@
     height:auto;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/news-banner.webp');
     background-size: 100% 100%;
+    
 }
 .newsLetter form label{
     display: none;
@@ -95,18 +99,52 @@
 .newsLetter form ::placeholder{
     color:#fff;
 }
-/*.newsLetter form button{
-    border:none;
-    padding:5px 10px;
-    background: #fff;
-}*/
+
 /* newsLetter Section End */
+
+
 /* Destination Section Start */
 .destination{
     width:100%;
     height:auto;
 }
 /* Destination Section End*/
+
+
+/* Estimation Section Start */
+.btn{
+    background-color: #FA9005;
+    color:#fff;
+}
+.btn:hover{
+    background-color:#D5385F;
+    color:#fff;
+}
+.estimate{    
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.7)),url('../img/help-banner.jpeg');
+    height: 380;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+/* Estimation Section End */
+
+/* Footer Section Start */
+footer{
+    width:100%;
+    height:500;
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url('../img/desti7.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+footer h3{
+    font-size: 20px;
+}
+footer .int-sites{
+    padding-top: 30px;
+}
+/* Footer Section End */
 /* Media Query Section start */
 
 @media only screen and (max-width:575px){
@@ -133,9 +171,20 @@
             margin-left:100px !important;
             
     }
+   
 
 }
-
+@media only screen and (max-width:992px){
+    .banner span{
+        font-size:20px !important;
+    }  
+    .banner p{
+        font-size: 10px !important;
+    }
+    
+    
+    
+}
 /* Media Query Section End*/
 
 
